@@ -1,10 +1,11 @@
 libraries:
   REPLACE_WITH_AUDIOBOOK_LIBRARY_NAME:
-    metadata_path:
+    collection_files:
       - file: config/audiobooks.yml
     operations:
       delete_collections:
-        unconfigured: true
+        managed: true
+        configured: false
         less: 1
 
 plex:
