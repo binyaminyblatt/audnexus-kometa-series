@@ -1,4 +1,4 @@
-# Audnexus Kometa Audiobook Series Collections
+# Audnexus + Kometa: Audiobook Series Collections
 
 This is a guide on how to set up
 [Kometa](https://github.com/Kometa-Team/Kometa) to
