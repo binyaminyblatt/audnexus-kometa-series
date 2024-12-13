@@ -8,8 +8,11 @@ populated from the
 Plex. This is done by generating collections from the "Mood" tags that Audnexus
 adds to each book's metadata from each Audible series they are a part of.
 
-Kometa is "a project that has been designed to ease the creation and
-maintenance of metadata, collections, and playlists within a Plex Media Server".
+> Kometa (formerly known as Plex Meta Manager) is a powerful tool designed
+> to give you complete control over your media libraries. With Kometa, you
+> can take your customization to the next level, with granular control over
+> metadata, collections, overlays, and much more.
+
 There are other tools made with a similar purpose such as
 [Plex-Auto-Collections](https://github.com/mza921/Plex-Auto-Collections) but
 I've had the most success with Kometa.
@@ -20,9 +23,13 @@ First, you'll need to set the Audnexus metadata agent up using
 [their official guide](https://github.com/djdembeck/Audnexus.bundle#getting_started).
 During this process, you should uncheck the "Append authors as Mood tags"
 option, unless you'd like a collection to be created for each author in addition
-to each series. If you already have this agent set up and had previously checked
-this option, you may run into issues with getting the author tags to be removed
-on a metadata refresh.
+to each series.
+
+If you already have this agent set up and had previously checked
+this option, you can update the settings to stop appending authors as mood tags,
+and then refresh all book metadata in your audiobook library. If this doesn't
+remove the authors as mood tags, update to the latest version of the agent and try
+again, as this was recently fixed.
 
 ## 2. Setting up Kometa
 
