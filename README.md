@@ -17,7 +17,7 @@ I've had the most success with Kometa.
 ## 1. Setting Up Audnexus
 
 First, you'll need to set the Audnexus metadata agent up using
-[their official guide](https://github.com/djdembeck/Audnexus.bundle#-getting-started-).
+[their official guide](https://github.com/djdembeck/Audnexus.bundle#getting_started).
 During this process, you should uncheck the "Append authors as Mood tags"
 option, unless you'd like a collection to be created for each author in addition
 to each series. If you already have this agent set up and had previously checked
