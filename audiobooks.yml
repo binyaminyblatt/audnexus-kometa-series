@@ -6,11 +6,20 @@ templates:
       sort_by: title.asc # sort each series by sort title ascending, as the sort title for each book in a series (from the metadata agent) should keep them in order. without this, the books in the collection will be sorted by total plays.
       all:
         album_mood: <<value>>
+      # Exclude all album moods beginning with these prefixes.
+      # These are tags that Audnexus adds to albums so third-party apps can use the data,
+      # but they should not be included in user-facing collections.
+      not:
+        album_mood.begins: 
+          - PMM_exclude
+          - KOMETA_exclude 
+          - PMM_ignore 
+          - KOMETA_ignore 
 
 dynamic_collections:
   Audiobook Series:
     type: album_mood
     title_format: <<key_name>>
     remove_prefix: 'Series: ' # remove the "Series: " prefix from each Series name added by Audnexus before creating a collection from it.
-    # remove_suffix: ' Series' # some audible series names include the word "Series" at the end. If you'd like to remove that, uncomment this option.
+    remove_suffix: ' Series' # some audible series names include the word "Series" at the end. If you'd like to remove that, uncomment this option.
     template: audiobooks
