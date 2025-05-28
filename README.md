@@ -4,7 +4,7 @@ This is a guide on how to set up
 [Kometa](https://github.com/Kometa-Team/Kometa) to
 automatically generate collections from your audiobook series' that are
 populated from the
-[Audnexus metadata agent](https://github.com/djdembeck/Audnexus.bundle) for
+[Audnexus metadata agent]([https://github.com/djdembeck/Audnexus.bundle](https://github.com/binyaminyblatt/Audnexus.bundle/tree/backup-api)) for
 Plex. This is done by generating collections from the "Mood" tags that Audnexus
 adds to each book's metadata from each Audible series they are a part of.
 
